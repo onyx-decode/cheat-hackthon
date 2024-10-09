@@ -1,0 +1,41 @@
+        /* Custom styles */
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        .hero {
+            background-image: url('https://source.unsplash.com/random/1600x900');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        .card {
+            height: 100%;
+        }
+        .section {
+            padding: 5rem 0;
+        }
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1496181133206-80ce9b88a853?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDIxfHxjbG91ZHxlbnwwfHx8fDE2ODcwODg1MTM&ixlib=rb-1.2.1&q=80&w=1080');      background-size: cover;  
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            position: relative;
+        }
+        
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); 
+            z-index: 1;
+        }
+        
+        .hero .container {
+            position: relative;
+            z-index: 2;
+        }
